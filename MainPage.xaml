@@ -14,16 +14,19 @@
                 SemanticProperties.Description="dot net bot in a race car number eight" />
 
             <Label
-                Text="Hello, World!"
+                x:Name="lblBienvenida"
+                Text="{Binding MensajeBienvenida}"
                 Style="{StaticResource Headline}"
-                SemanticProperties.HeadingLevel="Level1" />
-
+                Loaded="CargandoNombresString"
+                SemanticProperties.HeadingLevel="Level1"
+                SemanticProperties.Description="Etiqueta de bienvenida" />
+            
             <Label
-                Text="Welcome to &#10;.NET Multi-platform App UI"
+                Text="aplicacion creada por Piero"
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
-
+           
             <Button
                 x:Name="CounterBtn"
                 Text="Click me" 

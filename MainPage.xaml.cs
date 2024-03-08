@@ -1,9 +1,10 @@
-﻿namespace aplicacionFarmacos
+﻿using System.Security.Cryptography.X509Certificates;
+
+namespace aplicacionFarmacos
 {
     public partial class MainPage : ContentPage
     {
         int count = 0;
-
         public MainPage()
         {
             InitializeComponent();
@@ -19,6 +20,15 @@
                 CounterBtn.Text = $"Clicked {count} times";
 
             SemanticScreenReader.Announce(CounterBtn.Text);
+        }
+        private String carganombre()
+        {
+
+            return "Piero";
+        }
+        private void CargandoNombresString(object sender, EventArgs e)
+        {
+            lblBienvenida.Text = $"¡Bienvenido {carganombre()}, a la aplicación de gestión de fármacos!";
         }
     }
 
