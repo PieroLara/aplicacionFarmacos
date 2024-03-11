@@ -4,7 +4,7 @@ using System.IO;
 
 public class GestionaFicheros
 {
-    private string str;
+    private string str="";
 
     public FileStream CargaFichero()
     {
@@ -81,8 +81,8 @@ public class GestionaFicheros
                     arrayChar = new char[10];
                     while (cantidadCarac <= 9)
                     {
-                        char caracter = (char)accesoDirecto.ReadByte();
-                        arrayChar[cantidadCarac] = caracter;
+                        char caracter1 = (char)accesoDirecto.ReadByte();
+                        arrayChar[cantidadCarac] = caracter1;
                         cantidadCarac++;
                     }
                     temporal.IdFarmaco = arrayChar;
@@ -91,8 +91,8 @@ public class GestionaFicheros
                     arrayChar = new char[10];
                     while (cantidadCarac <= 9)
                     {
-                        char caracter = (char)accesoDirecto.ReadByte();
-                        arrayChar[cantidadCarac] = caracter;
+                        char caracter2 = (char)accesoDirecto.ReadByte();
+                        arrayChar[cantidadCarac] = caracter2;
                         cantidadCarac++;
                     }
                     temporal.IdFarmaco = arrayChar;
@@ -101,8 +101,8 @@ public class GestionaFicheros
                     arrayChar = new char[5];
                     while (cantidadCarac <= 4)
                     {
-                        char caracter = (char)accesoDirecto.ReadByte();
-                        arrayChar[cantidadCarac] = caracter;
+                        char caracter3 = (char)accesoDirecto.ReadByte();
+                        arrayChar[cantidadCarac] = caracter3;
                         cantidadCarac++;
                     }
                     temporal.Hora = arrayChar;

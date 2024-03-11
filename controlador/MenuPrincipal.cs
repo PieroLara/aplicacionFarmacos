@@ -1,3 +1,4 @@
+using aplicacionFarmacos.modelo;
 using System;
 using System.Collections.Generic;
 
