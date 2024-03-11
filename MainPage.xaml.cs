@@ -1,5 +1,6 @@
 ﻿using System.Security.Cryptography.X509Certificates;
 
+
 namespace aplicacionFarmacos
 {
     public partial class MainPage : ContentPage

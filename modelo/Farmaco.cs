@@ -1,5 +1,5 @@
 using System;
-namespace aplicacionFarmaco.modelo { 
+namespace aplicacionFarmacos.modelo { 
 public class Farmaco
 {
     private int codigo;

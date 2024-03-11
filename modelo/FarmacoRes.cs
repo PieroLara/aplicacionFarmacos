@@ -1,132 +1,139 @@
 ﻿using System;
 
 public class FarmacoResponse
-    {
+{
     public FarmacoResponse()
     {
-    public class Rootobject
-        {
-            public string nregistro { get; set; }
-            public string nombre { get; set; }
-            public string pactivos { get; set; }
-            public string labtitular { get; set; }
-            public string cpresc { get; set; }
-            public Estado estado { get; set; }
-            public bool comerc { get; set; }
-            public bool receta { get; set; }
-            public bool generico { get; set; }
-            public bool conduc { get; set; }
-            public bool triangulo { get; set; }
-            public bool huerfano { get; set; }
-            public bool biosimilar { get; set; }
-            public Nosustituible nosustituible { get; set; }
-            public bool psum { get; set; }
-            public bool notas { get; set; }
-            public bool materialesInf { get; set; }
-            public bool ema { get; set; }
-            public Doc[] docs { get; set; }
-            public Foto[] fotos { get; set; }
-            public Atc[] atcs { get; set; }
-            public Principiosactivo[] principiosActivos { get; set; }
-            public Excipiente[] excipientes { get; set; }
-            public Viasadministracion[] viasAdministracion { get; set; }
-            public Presentacione[] presentaciones { get; set; }
-            public Formafarmaceutica formaFarmaceutica { get; set; }
-            public Formafarmaceuticasimplificada formaFarmaceuticaSimplificada { get; set; }
-            public Vtm vtm { get; set; }
-            public string dosis { get; set; }
-        }
-
-        public class Estado
-        {
-            public long aut { get; set; }
-        }
-
-        public class Nosustituible
-        {
-            public int id { get; set; }
-            public string nombre { get; set; }
-        }
-
-        public class Formafarmaceutica
-        {
-            public int id { get; set; }
-            public string nombre { get; set; }
-        }
-
-        public class Formafarmaceuticasimplificada
-        {
-            public int id { get; set; }
-            public string nombre { get; set; }
-        }
-
-        public class Vtm
-        {
-            public long id { get; set; }
-            public string nombre { get; set; }
-        }
-
-        public class Doc
-        {
-            public int tipo { get; set; }
-            public string url { get; set; }
-            public string urlHtml { get; set; }
-            public bool secc { get; set; }
-            public long fecha { get; set; }
-        }
-
-        public class Foto
-        {
-            public string tipo { get; set; }
-            public string url { get; set; }
-            public long fecha { get; set; }
-        }
-
-        public class Atc
-        {
-            public string codigo { get; set; }
-            public string nombre { get; set; }
-            public int nivel { get; set; }
-        }
-
-        public class Principiosactivo
-        {
-            public int id { get; set; }
-            public string codigo { get; set; }
-            public string nombre { get; set; }
-            public string cantidad { get; set; }
-            public string unidad { get; set; }
-            public int orden { get; set; }
-        }
-
-        public class Excipiente
-        {
-            public int id { get; set; }
-            public string nombre { get; set; }
-            public string cantidad { get; set; }
-            public string unidad { get; set; }
-            public int orden { get; set; }
-        }
-
-        public class Viasadministracion
-        {
-            public int id { get; set; }
-            public string nombre { get; set; }
-        }
-
-        public class Presentacione
-        {
-            public string cn { get; set; }
-            public string nombre { get; set; }
-            public Estado1 estado { get; set; }
-            public bool comerc { get; set; }
-            public bool psum { get; set; }
-        }
-
-        public class Estado1
-        {
-            public long aut { get; set; }
-        }
 
     }
+    
+
+
+
+public class Rootobject
+    {
+        public string nregistro { get; set; }
+        public string nombre { get; set; }
+        public string pactivos { get; set; }
+        public string labtitular { get; set; }
+        public string cpresc { get; set; }
+        public Estado estado { get; set; }
+        public bool comerc { get; set; }
+        public bool receta { get; set; }
+        public bool generico { get; set; }
+        public bool conduc { get; set; }
+        public bool triangulo { get; set; }
+        public bool huerfano { get; set; }
+        public bool biosimilar { get; set; }
+        public Nosustituible nosustituible { get; set; }
+        public bool psum { get; set; }
+        public bool notas { get; set; }
+        public bool materialesInf { get; set; }
+        public bool ema { get; set; }
+        public Doc[] docs { get; set; }
+        public Foto[] fotos { get; set; }
+        public Atc[] atcs { get; set; }
+        public Principiosactivo[] principiosActivos { get; set; }
+        public Excipiente[] excipientes { get; set; }
+        public Viasadministracion[] viasAdministracion { get; set; }
+        public Presentacione[] presentaciones { get; set; }
+        public Formafarmaceutica formaFarmaceutica { get; set; }
+        public Formafarmaceuticasimplificada formaFarmaceuticaSimplificada { get; set; }
+        public Vtm vtm { get; set; }
+        public string dosis { get; set; }
+    }
+
+    public class Estado
+    {
+        public long aut { get; set; }
+    }
+
+    public class Nosustituible
+    {
+        public int id { get; set; }
+        public string nombre { get; set; }
+    }
+
+    public class Formafarmaceutica
+    {
+        public int id { get; set; }
+        public string nombre { get; set; }
+    }
+
+    public class Formafarmaceuticasimplificada
+    {
+        public int id { get; set; }
+        public string nombre { get; set; }
+    }
+
+    public class Vtm
+    {
+        public long id { get; set; }
+        public string nombre { get; set; }
+    }
+
+    public class Doc
+    {
+        public int tipo { get; set; }
+        public string url { get; set; }
+        public string urlHtml { get; set; }
+        public bool secc { get; set; }
+        public long fecha { get; set; }
+    }
+
+    public class Foto
+    {
+        public string tipo { get; set; }
+        public string url { get; set; }
+        public long fecha { get; set; }
+    }
+
+    public class Atc
+    {
+        public string codigo { get; set; }
+        public string nombre { get; set; }
+        public int nivel { get; set; }
+    }
+
+    public class Principiosactivo
+    {
+        public int id { get; set; }
+        public string codigo { get; set; }
+        public string nombre { get; set; }
+        public string cantidad { get; set; }
+        public string unidad { get; set; }
+        public int orden { get; set; }
+    }
+
+    public class Excipiente
+    {
+        public int id { get; set; }
+        public string nombre { get; set; }
+        public string cantidad { get; set; }
+        public string unidad { get; set; }
+        public int orden { get; set; }
+    }
+
+    public class Viasadministracion
+    {
+        public int id { get; set; }
+        public string nombre { get; set; }
+    }
+
+    public class Presentacione
+    {
+        public string cn { get; set; }
+        public string nombre { get; set; }
+        public Estado1 estado { get; set; }
+        public bool comerc { get; set; }
+        public bool psum { get; set; }
+    }
+
+    public class Estado1
+    {
+        public long aut { get; set; }
+    }
+
 }
+
+

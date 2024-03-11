@@ -29,16 +29,19 @@
 
             <Button
                 x:Name="CounterBtn"
-                Text="Click me" 
+                Text="Nuevo Medicamento" 
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Fill" />
+			<ActivityIndicator x:Name="loading" HeightRequest="30" color="Blue" isRunning="true" isVisible="false"/>
+				
             <ListView x:Name="itemListView">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout>
-                                <Label Text="{Binding NombreFarmaco}" />
+                            <StackLayout Orientation="Horizontal" Padding="10">
+								<image Source ="{Binding fotos.url}" WidthRequest="50" HeightRequest="50" Aspect="AspectFill"/>
+                                <Label Text="{Binding nombre}" VerticalTextAligment="Center" Margin="10,0,0,0"/>
                                 <Label Text="{Binding DescripcionFarmaco}" />
                             </StackLayout>
                         </ViewCell>
