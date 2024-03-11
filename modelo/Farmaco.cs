@@ -1,5 +1,5 @@
 using System;
-
+namespace aplicacionFarmaco.modelo { 
 public class Farmaco
 {
     private int codigo;
@@ -52,4 +52,5 @@ public class Farmaco
         validoIntermedio[0] = 'b';
         this.valido = validoIntermedio;
     }
+}
 }

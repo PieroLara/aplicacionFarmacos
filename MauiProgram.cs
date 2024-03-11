@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using aplicacionFarmacos.controlador.Servicios;
 
 namespace aplicacionFarmacos
 {
@@ -15,6 +16,9 @@ namespace aplicacionFarmacos
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
+            builder.Services.AddSingleton<aplicacionFarmacos.controlador.Servicios.IFarmacoService, aplicacionFarmacos.controlador.Servicios.FarmacoService>();
+            builder.Service.AddTransient<MainPage>();
+                
 
 #if DEBUG
     		builder.Logging.AddDebug();
