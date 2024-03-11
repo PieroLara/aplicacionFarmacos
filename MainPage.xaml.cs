@@ -8,6 +8,7 @@ namespace aplicacionFarmacos
         public MainPage()
         {
             InitializeComponent();
+            MenuPrincipal();
         }
 
         private void OnCounterClicked(object sender, EventArgs e)

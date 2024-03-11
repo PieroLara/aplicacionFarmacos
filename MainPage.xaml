@@ -20,19 +20,31 @@
                 Loaded="CargandoNombresString"
                 SemanticProperties.HeadingLevel="Level1"
                 SemanticProperties.Description="Etiqueta de bienvenida" />
-            
+
             <Label
                 Text="aplicacion creada por Piero"
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
-           
+
             <Button
                 x:Name="CounterBtn"
                 Text="Click me" 
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Fill" />
+            <ListView x:Name="itemListView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label Text="{Binding NombreFarmaco}" />
+                                <Label Text="{Binding DescripcionFarmaco}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </VerticalStackLayout>
     </ScrollView>
 
