@@ -7,7 +7,7 @@ namespace aplicacionFarmacos.controlador
 	public class FarmacoService : IFarmacoResService
 	{
 
-		private string urlAPI = "https://cima.aemps.es/cima/rest/medicamentos?practiv1=Etinilestradiol";
+		private readonly string urlAPI = "https://cima.aemps.es/cima/rest/medicamentos?practiv1=Etinilestradiol";
 
         public async Task<List<FarmacoResponse>> Obtener()
         {
