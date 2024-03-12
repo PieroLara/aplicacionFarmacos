@@ -1,17 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Xml.Serialization;
 
 namespace aplicacionFarmacos.modelo
 {
     public class Recordatorio
     {
-        String nombre;
-        FarmacoResponse farmacoActual;
-        DateTime Repeticiones;
+        public String nombre;
+        public FarmacoResponse farmacoActual;
+        public DateTime Repeticiones;
+        public Recordatorio(FarmacoResponse farmacoActual, DateTime Repeticiones, String nombre)
+        { 
+            this.farmacoActual = farmacoActual;
+            this.Repeticiones = Repeticiones;
+            this.nombre = nombre;
+        }
+        public Recordatorio(){
 
-        public Recordatorio(FarmacoResponse farmacoActual, DateTime Repeticiones, String nombre) { this.farmacoActual = farmacoActual; this.Repeticiones = Repeticiones; this.nombre = nombre; }
+            farmacoActual= null;
+            nombre = "Invitado";
+        }
     }
 }

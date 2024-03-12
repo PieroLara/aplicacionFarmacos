@@ -24,7 +24,7 @@
             <StackLayout
                 x:Name="CapaNuevoMedicamento">
                 <Button
-                    x:Name="CounterBtn"
+                    x:Name="BtnNuevoMedicamento"
                     Text="Nuevo Medicamento" 
                     SemanticProperties.Hint="Inserta un nuevo medicamento"
                     Clicked="InsertarNuevoMedicamento"
@@ -34,7 +34,8 @@
 
                 <ListView
                     x:Name="CapaListadoMedicamento"
-                    ItemTapped="SeleccionaMedicamento">
+                    ItemTapped="SeleccionaMedicamento"
+                    IsVisible="False">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
@@ -96,6 +97,42 @@
                     HorizontalOptions="Fill"/>
 
             </StackLayout>
+            
+            <Button
+                x:Name="BotonBorrado"
+                Text="Eliminar alarma Actual"
+                SemanticProperties.Hint="Inserta un nuevo medicamento"
+                Clicked="EliminaNotificacion"
+                HorizontalOptions="Fill"
+                BackgroundColor="Red"
+                IsVisible="False"/>
+            
+            <Button
+                x:Name="btnNuevoUsuario"
+                Text="Registrar Usuario"
+                SemanticProperties.Hint="Registra al nuevo usuario "
+                Clicked="AbreRegistraUsuario"
+                HorizontalOptions="Fill"
+                BackgroundColor="Green"/>
+
+            <StackLayout
+                 x:Name="CapaRegistroUsuario"
+                 IsVisible="False">
+                <Label
+                     Text="Nombre del Usuario:"
+                     FontSize="Medium"
+                     Margin="0,10,0,5" />
+                <Editor
+                     x:Name="EditorTextoUsuario"
+                     Completed="RegistraUsuario"/>
+                <Button
+                     x:Name="btnConfirmarNuevoUsuario"
+                     Text="Registrar Usuario"
+                     SemanticProperties.Hint="Confirma el registro de nuevo usuario"
+                     Clicked="RegistraUsuario"
+                     HorizontalOptions="Fill"/>
+            </StackLayout>
+
         </VerticalStackLayout>
     </ScrollView>
 
